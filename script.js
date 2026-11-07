@@ -10,8 +10,9 @@ if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
 }
 
-// 2) For every "Pet the dog" button on the page...
-const petButtons = document.querySelectorAll(".pet-button");
+// 2) For every "Pet the dog" button inside a breed card...
+//    (scoped to .breed-card so the care buttons below are not included)
+const petButtons = document.querySelectorAll(".breed-card .pet-button");
 
 petButtons.forEach(function (button) {
   button.addEventListener("click", function () {
