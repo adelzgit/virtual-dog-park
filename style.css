@@ -1,0 +1,156 @@
+/* ===== Virtual Dog Park - styles =====
+   Plain CSS, no frameworks. Comments explain each part. */
+
+/* Use a modern box model so padding never breaks our widths. */
+* {
+  box-sizing: border-box;
+}
+
+/* Base page settings: readable font, comfortable colors. */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #2b2b2b;
+  background-color: #f7f9fc;
+}
+
+/* ===== Header ===== */
+.site-header {
+  text-align: center;
+  padding: 32px 16px;
+  background-color: #d8ecff;
+  border-bottom: 3px solid #b9dcff;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.tagline {
+  margin: 8px 0 0;
+  font-size: 1.05rem;
+  color: #3a4a5a;
+}
+
+/* ===== Main content width =====
+   The "max-width" keeps lines short and easy to read on big screens. */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* ===== Welcome & section headings ===== */
+h2 {
+  color: #1f6feb;
+  border-bottom: 2px solid #e3eefc;
+  padding-bottom: 8px;
+}
+
+.welcome p,
+.section-intro {
+  font-size: 1.05rem;
+}
+
+/* ===== Breed grid =====
+   CSS Grid makes cards sit side by side on laptops
+   and stack on phones automatically. */
+.breed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+/* ===== Breed card ===== */
+.breed-card {
+  background-color: #ffffff;
+  border: 1px solid #e3e8ef;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.breed-image {
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+  border-radius: 50%;
+  background-color: #f0f4f8;
+}
+
+.breed-card h3 {
+  margin: 16px 0 8px;
+  font-size: 1.4rem;
+  color: #1f6feb;
+}
+
+/* Smaller headings inside each card */
+.breed-card h4 {
+  margin: 14px 0 4px;
+  font-size: 1rem;
+  color: #444;
+  text-align: left;
+}
+
+.breed-card p {
+  margin: 0;
+  text-align: left;
+  font-size: 0.98rem;
+}
+
+/* ===== Pet button ===== */
+.pet-button {
+  margin-top: 16px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #1f6feb;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pet-button:hover {
+  background-color: #1559c4;
+}
+
+.pet-message {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #1a7f37;
+}
+
+/* ===== Wag animation =====
+   When JavaScript adds the "wag" class, the dog gently rotates. */
+.wag {
+  animation: wag 0.4s ease-in-out 3;
+  transform-origin: center bottom;
+}
+
+@keyframes wag {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(-6deg); }
+  75%  { transform: rotate(6deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  text-align: center;
+  padding: 20px 16px;
+  margin-top: 32px;
+  background-color: #eef3fa;
+  color: #566;
+  font-size: 0.9rem;
+}
+
+/* ===== Small phones ===== */
+@media (max-width: 480px) {
+  .site-header h1 {
+    font-size: 1.7rem;
+  }
+}

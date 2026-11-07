@@ -1,0 +1,41 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a Beagle">
+  <!-- Background -->
+  <circle cx="120" cy="120" r="118" fill="#eaf4ff"/>
+
+  <!-- Tail with white tip (behind body) -->
+  <path d="M150 185 q42 -6 46 -46" fill="none" stroke="#caa472" stroke-width="16" stroke-linecap="round"/>
+  <path d="M196 139 q4 -10 -8 -16" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Long black floppy ears (behind head) -->
+  <path d="M70 78 q-30 25 -22 78 q4 18 22 18 q14 -42 18 -78 z" fill="#2e2620"/>
+  <path d="M170 78 q30 25 22 78 q-4 18 -22 18 q-14 -42 -18 -78 z" fill="#2e2620"/>
+
+  <!-- Body: white chest with tan/black saddle -->
+  <path d="M64 205 q-2 -72 56 -72 q58 0 56 72 z" fill="#f6f1e7"/>
+  <path d="M70 205 q2 -58 50 -58 q48 0 50 58 q-50 16 -100 0 z" fill="#3a2f25"/>
+  <path d="M104 205 q0 -54 16 -54 q16 0 16 54 z" fill="#ffffff"/>
+
+  <!-- Front paws -->
+  <ellipse cx="98" cy="206" rx="16" ry="10" fill="#ffffff"/>
+  <ellipse cx="142" cy="206" rx="16" ry="10" fill="#ffffff"/>
+
+  <!-- Head: tan with white blaze and muzzle -->
+  <circle cx="120" cy="98" r="50" fill="#d99a55"/>
+  <!-- White blaze up the forehead -->
+  <path d="M120 52 q-12 22 0 44 q12 -22 0 -44 z" fill="#ffffff"/>
+  <!-- White muzzle -->
+  <ellipse cx="120" cy="116" rx="32" ry="26" fill="#ffffff"/>
+  <!-- Soft tan cheeks -->
+  <path d="M88 96 q-6 22 8 34 q-22 -6 -22 -28 z" fill="#c98a48"/>
+  <path d="M152 96 q6 22 -8 34 q22 -6 22 -28 z" fill="#c98a48"/>
+
+  <!-- Eyes -->
+  <circle cx="101" cy="94" r="7" fill="#2e2620"/>
+  <circle cx="139" cy="94" r="7" fill="#2e2620"/>
+  <circle cx="103" cy="92" r="2.2" fill="#fff"/>
+  <circle cx="141" cy="92" r="2.2" fill="#fff"/>
+
+  <!-- Nose and mouth -->
+  <ellipse cx="120" cy="110" rx="9" ry="6.5" fill="#2e2620"/>
+  <path d="M120 116 v8 M120 124 q-8 6 -16 2 M120 124 q8 6 16 2" fill="none" stroke="#2e2620" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
