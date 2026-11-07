@@ -109,6 +109,62 @@
 
       </div>
     </section>
+    <!-- ===== My Virtual Dog ===== -->
+    <section class="my-dog">
+      <h2>My Virtual Dog</h2>
+      <p class="section-intro">Adopt a dog and take care of it!</p>
+
+      <!-- Adoption form -->
+      <form id="adopt-form" class="adopt-form">
+        <div class="form-row">
+          <label for="breed-select">Choose a breed:</label>
+          <select id="breed-select" name="breed">
+            <option value="Beagle">Beagle</option>
+            <option value="Golden Retriever">Golden Retriever</option>
+            <option value="Poodle">Poodle</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="dog-name">Name your dog:</label>
+          <input
+            type="text"
+            id="dog-name"
+            name="dog-name"
+            maxlength="20"
+            placeholder="e.g. Buddy"
+          />
+        </div>
+
+        <button type="submit" class="adopt-button">Adopt 🐾</button>
+      </form>
+
+      <!-- Helpful message (errors or success). Hidden until needed. -->
+      <p id="adopt-message" class="adopt-message" hidden></p>
+
+      <!-- Dog status panel. Hidden until a dog is adopted. -->
+      <div id="dog-panel" class="dog-panel" hidden>
+        <img
+          id="dog-panel-image"
+          class="breed-image"
+          src=""
+          alt=""
+          width="200"
+          height="200"
+        />
+        <h3 id="dog-panel-name"></h3>
+        <ul class="dog-stats">
+          <li>Breed: <span id="dog-breed"></span></li>
+          <li>Day: <span id="dog-day"></span></li>
+          <li>Growth stage: <span id="dog-stage"></span></li>
+          <li>Happiness: <span id="dog-happiness"></span> / 100</li>
+        </ul>
+        <div class="care-buttons">
+          <button id="feed-button" class="pet-button" type="button">Feed 🍖</button>
+          <button id="play-button" class="pet-button" type="button">Play 🎾</button>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ===== Footer ===== -->

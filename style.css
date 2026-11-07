@@ -154,3 +154,92 @@ h2 {
     font-size: 1.7rem;
   }
 }
+
+/* ===== My Virtual Dog section ===== */
+.my-dog {
+  margin-top: 40px;
+  background-color: #ffffff;
+  border: 1px solid #e3e8ef;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+/* Form rows stack the label above the control and keep them readable. */
+.form-row {
+  margin-bottom: 16px;
+  max-width: 360px;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-row select,
+.form-row input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #c7d0db;
+  border-radius: 8px;
+}
+
+/* Adopt button reuses the friendly blue style. */
+.adopt-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #1f6feb;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.adopt-button:hover {
+  background-color: #1559c4;
+}
+
+/* Helpful message text. Success is green; error is red. */
+.adopt-message {
+  margin-top: 14px;
+  font-weight: bold;
+  color: #1a7f37;
+}
+
+.adopt-message.error {
+  color: #c0392b;
+}
+
+/* Dog status panel */
+.dog-panel {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.dog-panel h3 {
+  margin: 16px 0 8px;
+  font-size: 1.4rem;
+  color: #1f6feb;
+}
+
+.dog-stats {
+  list-style: none;
+  padding: 0;
+  max-width: 320px;
+  margin: 12px auto;
+  text-align: left;
+}
+
+.dog-stats li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.care-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
